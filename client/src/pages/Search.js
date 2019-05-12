@@ -54,7 +54,7 @@ class Search extends Component {
     return (
       <div className="container">
           <Banner/>
-          <div className="text-center">
+          <div className="text-center form-inline-div">
             <form className="form-inline">
                 <Input name="title" placeholder="Enter a Book"  onChange={this.handleInputChange}  q={this.state.q}/>
                 <FormBtn onClick={this.handleSubmitClick} > Submit Book</FormBtn>
@@ -62,8 +62,6 @@ class Search extends Component {
           </div>
           <div className="row">
           <div className="col-10 col-centered card-content mb-4">
-            <h1 className="heading-title mx-sm-3 mb-2 text-center">Results</h1>
-
             {this.state.books.length ? (
               <ul className="list-group">
                 {this.state.books.map(book => (

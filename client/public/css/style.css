@@ -1,0 +1,9 @@
+.form-inline-div {
+    position: relative;
+}
+
+.form-inline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
